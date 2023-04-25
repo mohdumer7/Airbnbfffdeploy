@@ -12,7 +12,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ onClick, label }) => {
     <div
       onClick={onClick}
       className="px-2
-      max-w-fit
+    
                 py-3
               hover:bg-neutral-100
                 transition
