@@ -11,7 +11,7 @@ interface IUseFavorite {
   currentUser?: safeUser | null;
 }
 
-const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
+export const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
   const router = useRouter();
   const loginModal = useLoginModal();
 
