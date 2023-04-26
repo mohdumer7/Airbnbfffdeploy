@@ -1,7 +1,7 @@
 import ClientOnly from "./components/ClientOnly";
 import Modal from "./components/Modals/Modal";
 import RegisterModal from "./components/Modals/RegisterModal";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Nunito } from "next/font/google";
 import ToasterProvider from "./providers/ToasterProvider";
@@ -31,8 +31,8 @@ export default async function RootLayout({
           <RentModal />
           <LoginModal />
           <Navbar currentUser={currentUser} />
+          <div className="pb-20 pt-28">{children}</div>
         </ClientOnly>
-        {children}
       </body>
     </html>
   );
